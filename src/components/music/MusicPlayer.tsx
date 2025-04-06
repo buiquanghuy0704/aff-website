@@ -22,6 +22,10 @@ const MusicPlayer = () => {
     setIsShowAudioList(true);
   };
 
+  React.useEffect(() => {
+    setAudioList([]);
+  }, []);
+
   return (
     <div className="absolute bottom-0 left-0">
       <div
